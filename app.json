@@ -1,5 +1,5 @@
 {
-      "name": "Skyzu Robot",
+      "name": "Kayzu Robot",
       "description": "A Powerful  Telegram group management bot with anime theme.",
       "keywords": [
          "telegram",
@@ -9,8 +9,8 @@
          "naorobot"
       ],
     
-   "logo":    "https://telegra.ph/file/56811b69cbcece20bbebf.jpg",  
-   "repository": "https://github.com/Skyzu/SkyzuRobot",
+   "logo":    "https://telegra.ph/file/7d2fab979a7f4b5dd3af5.jpg",  
+   "repository": "https://github.com/Kayzyu/KayzuRobot",
    "addons": [
           {
          "options": {
@@ -69,7 +69,7 @@
       },
       "BOT_USERNAME": {
          "description": "username of your bot without the @",
-         "value": "SkyzuRobot"
+         "value": "kayzurobot"
       },
 
       "BOT_ID": {
