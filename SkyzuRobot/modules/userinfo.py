@@ -367,10 +367,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ProjectSkyzu"
+                                "Health", url="https://t.me/kayzuchannel"
                             ),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ProjectSkyzu"
+                                "Disaster", url="https://t.me/kayzuchannel"
                             ),
                         ],
                     ]
@@ -387,10 +387,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ProjectSkyzu"
+                                "Health", url="https://t.me/kayzuchannel"
                             ),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ProjectSkyzu"
+                                "Disaster", url="https://t.me/kayzuchannel"
                             ),
                         ],
                     ]
@@ -466,7 +466,7 @@ def set_about_me(update: Update, context: CallbackContext):
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
     stats = (
-        "❂ <b>Stats For <a href='https://t.me/SkyzuRobot'>Skyzu Robot</a>:</b>\n"
+        "♤ <b>Stats For <a href='https://t.me/KayzuMusicBot'>Kayzu Robot</a>:</b>\n"
         + "\n".join([mod.__stats__() for mod in STATS])
     )
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
@@ -562,32 +562,32 @@ def __user_info__(user_id):
 
 __help__ = """
 *ID:*
-❂ /id*:* get the current group id. If used by replying to a message, gets that user's id.
-❂ /gifid*:* reply to a gif to me to tell you its file ID.
+♤ /id*:* get the current group id. If used by replying to a message, gets that user's id.
+♤ /gifid*:* reply to a gif to me to tell you its file ID.
  
 *Self addded information:* 
-❂ /setme <text>*:* will set your info
-❂ /me*:* will get your or another user's info.
+♤ /setme <text>*:* will set your info
+♤ /me*:* will get your or another user's info.
 Examples:
-❂ /setme I am a wolf.
-❂ /me @username(defaults to yours if no user specified)
+♤ /setme I am a wolf.
+♤ /me @username(defaults to yours if no user specified)
  
 *Information others add on you:* 
-❂ /bio*:* will get your or another user's bio. This cannot be set by yourself.
-❂ /setbio <text>*:* while replying, will save another user's bio 
+♤ /bio*:* will get your or another user's bio. This cannot be set by yourself.
+♤ /setbio <text>*:* while replying, will save another user's bio 
 Examples:
-❂ /bio @username(defaults to yours if not specified).
-❂ /setbio This user is a wolf (reply to the user)
+♤ /bio @username(defaults to yours if not specified).
+♤ /setbio This user is a wolf (reply to the user)
  
 *Overall Information about you:*
-❂ /info*:* get information about a user. 
+♤ /info*:* get information about a user. 
  
 *json Detailed info:*
-❂ /json*:* Get Detailed info about any message.
+♤ /json*:* Get Detailed info about any message.
  
 *AFk:*
 When marked as AFK, any mentions will be replied to with a message stating that you're not available!
-❂ /afk <reason>*:* Mark yourself as AFK.
+♤ /afk <reason>*:* Mark yourself as AFK.
   - brb <reason>: Same as the afk command, but not a command. 
   
 *What is that health thingy?*
