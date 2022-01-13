@@ -378,8 +378,8 @@ def Skyzu_about_callback(update, context):
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for SkyzuRobot.",
+            "\n\n_Kayzu's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for KayzuRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -467,7 +467,7 @@ def Skyzu_about_callback(update, context):
                     [
                         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/KayzuSupport"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/Kayzuchannel"
+                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/kayzuchannel"
                         ),
                     ],
                     [
@@ -479,8 +479,8 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Skyzu</b>\n"
-            f"\nHere Developers Making The SkyzuRobot",
+            text=f"<b>๏ Credis for Kayzu</b>\n"
+            f"\nHere Developers Making The KayzuRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -804,7 +804,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**Skyzu Robot Started!**
+                f"""**Kayzu Robot Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
