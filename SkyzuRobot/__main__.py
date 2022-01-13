@@ -83,8 +83,8 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
-♤ I'm Kayzu Robot and Music Bot to help manage your telegram group with a lot features.
-♤ Maintained by @Kayzuuuuu ✥
+✪ I'm an Kayzu Robot And Music Bot designed to help manage your telegram group with a lot features.
+✪ Maintained by @Kayzuuuuu ✨
 ────────────────────────
 Hit the /help to see available command.
 """
@@ -98,12 +98,14 @@ buttons = [
         InlineKeyboardButton(text="ᴛʀʏ ɪɴʟɪɴᴇ​", switch_inline_query_current_chat=""),
     ],
     [
+        InlineKeyboardButton(
+            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Kayzyu/KayzuRobot"
         ),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="✙ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ✙",
+            text="➗ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➗",
             url=f"t.me/{dispatcher.bot.username}?startgroup=new",
         ),
     ],
@@ -238,7 +240,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Skyzu robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm Kayzu Robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
         )
 
@@ -369,7 +371,7 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Skyzu*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Kayzu*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -465,7 +467,7 @@ def Skyzu_about_callback(update, context):
                     [
                         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/KayzuSupport"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/kayzuchannel"
+                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/Kayzuchannel"
                         ),
                     ],
                     [
@@ -477,8 +479,8 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Kayzu</b>\n"
-            f"\nHere Developers Making The KayzuRobot",
+            text=f"<b>๏ Credis for Skyzu</b>\n"
+            f"\nHere Developers Making The SkyzuRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -802,7 +804,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**Kayzu Robot Started!**
+                f"""**Skyzu Robot Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
