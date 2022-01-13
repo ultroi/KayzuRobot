@@ -14,7 +14,7 @@ PHOTO = "https://telegra.ph/file/7d2fab979a7f4b5dd3af5.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
-    TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Skyzu Robot.** \n\n"
+    TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Kayzu Robot.** \n\n"
     TEXT += "♤ **I'm Working Properly** \n\n"
     TEXT += f"♤ **My Master : [Kayzu](https://t.me/Kayzuuuuu)** \n\n"
     TEXT += f"♤ **Library Version :** `{telever}` \n\n"
@@ -23,7 +23,7 @@ async def awake(event):
     TEXT += "**Thanks For Adding Me Here ❤️**"
     BUTTON = [
         [
-            Button.url("ʜᴇʟᴘ​", "https://t.me/KayzuRobot?start=help"),
+            Button.url("ʜᴇʟᴘ​", "https://t.me/KayzuMusicBot?start=help"),
             Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/KayzuSupport"),
         ]
     ]
