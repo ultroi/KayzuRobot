@@ -46,7 +46,7 @@ async def bug(_, msg: Message):
     datetimes_fmt = "%d-%m-%Y"
     datetimes = datetime.utcnow().strftime(datetimes_fmt)
 
-    thumb = "https://telegra.ph/file/fcdc792f018f3cf899cf2.jpg"
+    thumb = "https://telegra.ph/file/3148ab48fdfb29b91a4eb.jpg"
     
     bug_report = f"""
 **#BUG : ** **[Master](https://t.me/ybgskr_ex)**
@@ -58,24 +58,24 @@ async def bug(_, msg: Message):
 
     
     if msg.chat.type == "private":
-        await msg.reply_text("❎ <b>This command only works in groups.</b>")
+        await msg.reply_text("✖ <b>This command only works in groups.</b>")
         return
 
     if user_id == owner:
         if bugs:
             await msg.reply_text(
-                f"❎ <b>How can be owner bot reporting bug idiot??</b>",
+                f"✖ <b>How can be owner bot reporting bug idiot??</b>",
             )
             return
         else:
             await msg.reply_text(
-                f"❎ <b>Owner noob!</b>",
+                f"✖ <b>Owner noob!</b>",
             )
     elif user_id != owner:
         if bugs:
             await msg.reply_text(
                 f"<b>Bug Report : {bugs}</b>\n\n"
-                "✅ <b>The bug was successfully reported to the support group!</b>",
+                "✔ <b>The bug was successfully reported to the support group!</b>",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -104,7 +104,7 @@ async def bug(_, msg: Message):
             )
         else:
             await msg.reply_text(
-                f"❎ <b>No bug to Report!</b>",
+                f"✖ <b>No bug to Report!</b>",
             )
         
     
