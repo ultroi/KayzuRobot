@@ -103,42 +103,42 @@ admin_help: |
     *⍟The Following Commands are Admins only:* 
     ♤ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
     ♤ /unpin*:* unpins the currently pinned message
-    ❂ /invitelink*:* gets invitelink
-    ❂ /promote*:* promotes the user replied to
-    ❂ /fullpromote*:* promotes the user replied to with full rights
-    ❂ /demote*:* demotes the user replied to
-    ❂ /title <title here>*:* sets a custom title for an admin that the bot promoted
-    ❂ /admincache*:* force refresh the admins list
-    ❂ /del*:* deletes the message you replied to
-    ❂ /purge*:* deletes all messages between this and the replied to message.
-    ❂ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
-    ❂ /setgtitle <text>*:* set group title
-    ❂ /setgpic*:* reply to an image to set as group photo
-    ❂ /setdesc*:* Set group description
-    ❂ /setsticker*:* Set group sticker
+    ♤ /invitelink*:* gets invitelink
+    ♤ /promote*:* promotes the user replied to
+    ♤ /fullpromote*:* promotes the user replied to with full rights
+    ♤ /demote*:* demotes the user replied to
+    ♤ /title <title here>*:* sets a custom title for an admin that the bot promoted
+    ♤ /admincache*:* force refresh the admins list
+    ♤ /del*:* deletes the message you replied to
+    ♤ /purge*:* deletes all messages between this and the replied to message.
+    ♤ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
+    ♤ /setgtitle <text>*:* set group title
+    ♤ /setgpic*:* reply to an image to set as group photo
+    ♤ /setdesc*:* Set group description
+    ♤ /setsticker*:* Set group sticker
 
-    *Rules*:
-    ❂ /rules*:* get the rules for this chat.
-    ❂ /setrules <your rules here>*:* set the rules for this chat.
-    ❂ /clearrules*:* clear the rules for this chat.
+    *⍟Rules*:
+    ♤ /rules*:* get the rules for this chat.
+    ♤ /setrules <your rules here>*:* set the rules for this chat.
+    ♤ /clearrules*:* clear the rules for this chat.
 anime_help: |
     ──「 Anime Search 」──   
 
-    ❂ /anime <anime>: returns information about the anime.
-    ❂ /whatanime: returns source of anime when replied to photo or gif.                                                          
-    ❂ /character <character>: returns information about the character.
-    ❂ /manga <manga>: returns information about the manga.
-    ❂ /user <user>: returns information about a MyAnimeList user.
-    ❂ /upcoming: returns a list of new anime in the upcoming seasons.
-    ❂ /airing <anime>: returns anime airing info.
-    ❂ /whatanime <anime>: reply to gif or photo.
-    ❂ /kaizoku <anime>: search an anime on animekaizoku.com
-    ❂ /kayo <anime>: search an anime on animekayo.com
+    ♤ /anime <anime>: returns information about the anime.
+    ♤ /whatanime: returns source of anime when replied to photo or gif.                                                          
+    ♤ /character <character>: returns information about the character.
+    ♤ /manga <manga>: returns information about the manga.
+    ♤ /user <user>: returns information about a MyAnimeList user.
+    ♤ /upcoming: returns a list of new anime in the upcoming seasons.
+    ♤ /airing <anime>: returns anime airing info.
+    ♤ /whatanime <anime>: reply to gif or photo.
+    ♤ /kaizoku <anime>: search an anime on animekaizoku.com
+    ♤ /kayo <anime>: search an anime on animekayo.com
 
     ──「 Anime Quotes 」──
 
-    ❂ /animequotes: for anime quotes randomly as photos.
-    ❂ /quote: send quotes randomly as text
+    ♤ /animequotes: for anime quotes randomly as photos.
+    ♤ /quote: send quotes randomly as text
 antichannel_help: |
     ──「 Anti-Channels 」──
 
@@ -149,23 +149,23 @@ antichannel_help: |
     Anti Channel Mode is a mode to automatically ban users who chat using Channels. 
     This command can only be used by *Admins*.
 
-    ❂ /antichannelmode <'on'/'yes'> *:* enables anti-channel-mode
-    ❂ /antichannelmode <'off'/'no'> *:* disabled anti-channel-mode
+    ♤ /antichannelmode <'on'/'yes'> *:* enables anti-channel-mode
+    ♤ /antichannelmode <'off'/'no'> *:* disabled anti-channel-mode
 antiflood_help: |
     ──「 Anti-Flood 」──
 
     Antiflood allows you to take action on users that send more than x messages in a row. Exceeding the set flood \
     will result in restricting that user.
     This will mute users if they send more than 10 messages in a row, bots are ignored.
-    ❂ `/flood`*:* Get the current flood control setting
+    ♤ `/flood`*:* Get the current flood control setting
 
-    *Admins only:*
+    *⍟Admins only:*
 
-    ❂ `/setflood <int/'no'/'off'>`*:* enables or disables flood control
+    ♤ `/setflood <int/'no'/'off'>`*:* enables or disables flood control
     *Example:* `/setflood 10`
-    ❂ `/setfloodmode <ban/kick/mute/tban/tmute> <value>`*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
+    ♤ `/setfloodmode <ban/kick/mute/tban/tmute> <value>`*:* Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban
 
-    *Note:*
+    *⍟Note:*
     Value must be filled for tban and tmute!!
     It can be:
     ➩ `5m` = 5 minutes
@@ -175,8 +175,8 @@ antiflood_help: |
 antispam_help: |
     ──「 Anti-Spam 」──
 
-    *Admins only:*
-    ❂ `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
+    *⍟Admins only:*
+    ♤ `/antispam <on/off/yes/no>`*:* Will toggle our antispam tech or return your current settings.
 
     Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect \
     you and your groups by removing spam flooders as quickly as possible.
@@ -195,12 +195,12 @@ approve_help: |
 
     That's what approvals are for - approve of trustworthy users to allow them to send
 
-    *Admin commands:*
-    ❂ /approval*:* Check a user's approval status in this chat.
-    ❂ /approve*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
-    ❂ /unapprove*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
-    ❂ /approved*:* List all approved users.
-    ❂ /unapproveall*:* Unapprove *ALL* users in a chat. This cannot be undone.
+    *⍟Admin commands:*
+    ♤ /approval*:* Check a user's approval status in this chat.
+    ♤ /approve*:* Approve of a user. Locks, blacklists, and antiflood won't apply to them anymore.
+    ♤ /unapprove*:* Unapprove of a user. They will now be subject to locks, blacklists, and antiflood again.
+    ♤ /approved*:* List all approved users.
+    ♤ /unapproveall*:* Unapprove *ALL* users in a chat. This cannot be undone.
 bansmutes_help: |
     ──「 Bans / Mutes 」──
 
