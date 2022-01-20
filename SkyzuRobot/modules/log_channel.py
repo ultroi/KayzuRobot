@@ -15,7 +15,7 @@ if is_module_loaded(FILENAME):
     from SkyzuRobot.modules.helper_funcs.chat_status import user_admin
     from SkyzuRobot.modules.sql import log_channel_sql as sql
     from SkyzuRobot.modules.language import gs
-    
+
     def loggable(func):
         @wraps(func)
         def log_action(
@@ -176,7 +176,7 @@ if is_module_loaded(FILENAME):
             message.reply_text("No log channel has been set yet!")
 
     def __stats__():
-        return f"• {sql.num_logchannels()} log channels set."
+        return f"× {sql.num_logchannels()} log channels set."
 
     def __migrate__(old_chat_id, new_chat_id):
         sql.migrate_chat(old_chat_id, new_chat_id)
@@ -188,12 +188,9 @@ if is_module_loaded(FILENAME):
             return f"This group has all it's logs sent to: {escape_markdown(log_channel_info.title)} (`{log_channel}`)"
         return "No log channel is set for this group!"
 
-    __help__ = """
-──「 Log channel 」──
 
-
-def helps(chat):
-    return gs(chat, "logchannel_help")
+    def helps(chat):
+        return gs(chat, "logchannel_help")
 
     __mod_name__ = "Log Channel​"
 
