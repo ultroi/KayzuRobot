@@ -172,7 +172,7 @@ class SkyzuHandler:
         return _inlinequery
 
 
-Skyzucmd = SkyzuHandler(d).command
-Skyzumsg = SkyzuHandler(d).message
-Skyzucallback = SkyzuHandler(d).callbackquery
-Skyzuinline = SkyzuHandler(d).inlinequery
+skyzucmd = SkyzuHandler(d).command
+skyzumsg = SkyzuHandler(d).message
+skyzucallback = SkyzuHandler(d).callbackquery
+skyzuinline = SkyzuHandler(d).inlinequery
