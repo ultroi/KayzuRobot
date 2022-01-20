@@ -14,7 +14,8 @@ if is_module_loaded(FILENAME):
     from SkyzuRobot import EVENT_LOGS, LOGGER, dispatcher
     from SkyzuRobot.modules.helper_funcs.chat_status import user_admin
     from SkyzuRobot.modules.sql import log_channel_sql as sql
-
+    from SkyzuRobot.modules.language import gs
+    
     def loggable(func):
         @wraps(func)
         def log_action(
@@ -190,16 +191,9 @@ if is_module_loaded(FILENAME):
     __help__ = """
 ──「 Log channel 」──
 
-❂ /logchannel*:* get log channel info
-❂ /setlog*:* set the log channel.
-❂ /unsetlog*:* unset the log channel.
 
-*Setting the log channel is done by*:
-
-➩ adding the bot to the desired channel (as an admin!)
-➩ sending /setlog in the channel
-➩ forwarding the /setlog to the group
-"""
+def helps(chat):
+    return gs(chat, "logchannel_help")
 
     __mod_name__ = "Log Channel​"
 
