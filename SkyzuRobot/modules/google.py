@@ -22,7 +22,7 @@ from telethon.tl.types import *
 
 from SkyzuRobot import *
 
-from Skyzu import register
+from SkyzuRobot import register
 from SkyzuRobot import telethn as tbot
 from SkyzuRobot.modules.language import gs
 
