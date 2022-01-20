@@ -13,7 +13,7 @@ from SkyzuRobot import dispatcher as d, LOGGER
 from typing import Optional, Union, List
 
 
-class SkyzuHandler:
+class SkyzuTelegramHandler:
     def __init__(self, d):
         self._dispatcher = d
 
@@ -172,7 +172,7 @@ class SkyzuHandler:
         return _inlinequery
 
 
-skyzucmd = SkyzuHandler(d).command
-skyzumsg = SkyzuHandler(d).message
-skyzucallback = SkyzuHandler(d).callbackquery
-skyzuinline = SkyzuHandler(d).inlinequery
+skyzucmd = SkyzuTelegramHandler(d).command
+skyzumsg = SkyzuTelegramHandler(d).message
+skyzucallback = SkyzuTelegramHandler(d).callbackquery
+skyzuinline = SkyzuTelegramHandler(d).inlinequery
