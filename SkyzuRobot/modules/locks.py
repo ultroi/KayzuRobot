@@ -10,7 +10,7 @@ from telegram.ext import Filters
 from telegram.utils.helpers import mention_html
 
 import SkyzuRobot.modules.sql.locks_sql as sql
-from SkyzuRobot.modules.helper_funcs.decorators import Skyzucmd, Skyzumsg
+from SkyzuRobot.modules.helper_funcs.decorators import skyzucmd, skyzumsg
 from SkyzuRobot.modules.sql.approve_sql import is_approved
 from SkyzuRobot import DRAGONS, LOGGER as log, dispatcher
 from SkyzuRobot.modules.helper_funcs.chat_status import (
@@ -130,7 +130,7 @@ def unrestr_members(
             pass
 
 
-@Skyzucmd(command="locktypes")
+@skyzucmd(command="locktypes")
 def locktypes(update, context):
     update.effective_message.reply_text(
         "\n • ".join(
@@ -140,7 +140,7 @@ def locktypes(update, context):
     )
 
 
-@Skyzucmd(command="lock", pass_args=True)
+@skyzucmd(command="lock", pass_args=True)
 @user_admin
 @loggable
 @typing_action
@@ -246,7 +246,7 @@ def lock(update, context) -> str:  # sourcery no-metrics
     return ""
 
 
-@Skyzucmd(command="unlock", pass_args=True)
+@skyzucmd(command="unlock", pass_args=True)
 @user_admin
 @loggable
 @typing_action
@@ -342,7 +342,7 @@ def unlock(update, context) -> str:  # sourcery no-metrics
     return ""
 
 
-@Skyzumsg((Filters.all & Filters.chat_type.groups), group=PERM_GROUP)
+@skyzumsg((Filters.all & Filters.chat_type.groups), group=PERM_GROUP)
 @user_not_admin
 def del_lockables(update, context):  # sourcery no-metrics
     chat = update.effective_chat  # type: Optional[Chat]
@@ -479,7 +479,7 @@ def build_lock_message(chat_id):
     return res
 
 
-@Skyzucmd(command="locks")
+@skyzucmd(command="locks")
 @user_admin
 @typing_action
 def list_locks(update, context):
