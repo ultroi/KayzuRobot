@@ -10,14 +10,14 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackContext
 
-from Natsunagi import eor
-from Natsunagi import pgram as app
-from Natsunagi.modules.helper_funcs.alternate import typing_action
-from Natsunagi.modules.helper_funcs.decorators import natsunagicmd
-from Natsunagi.modules.helper_funcs.misc import upload_text
-from Natsunagi.utils.errors import capture_err
-from Natsunagi.utils.keyboard import ikb
-from Natsunagi.utils.pastebin import hpaste
+from SkyzuRobot import eor
+from SkyzuRobot import pgram as app
+from SkyzuRobot.modules.helper_funcs.alternate import typing_action
+from SkyzuRobot.modules.helper_funcs.decorators import natsunagicmd
+from SkyzuRobot.modules.helper_funcs.misc import upload_text
+from SkyzuRobot.utils.errors import capture_err
+from SkyzuRobot.utils.keyboard import ikb
+from SkyzuRobot.utils.pastebin import hpaste
 
 __mod_name__ = "Paste"
 
@@ -241,13 +241,13 @@ def paste(update: Update, context: CallbackContext):
 __mod_name__ = "Paste"
 
 __help__ = """
-❂ `/spaste`*:* Paste to spacebin
-❂ `/npaste`*:* Paste to nekobin
-❂ `/paste`*:* Paste to ezup
-❂ `/bpaste`*:* Paste to batbin
-❂ `/kpaste`*:* Paste to katbin
-❂ `/ppaste`*:* Paste to pastylus
-❂ `/cpaste`*:* Paste to catbin
-❂ `/dpaste`*:* Paste to dogbin
-❂ `/pvpaste`*:* Paste to privatebin
+♤ `/spaste`*:* Paste to spacebin
+♤ `/npaste`*:* Paste to nekobin
+♤ `/paste`*:* Paste to ezup
+♤ `/bpaste`*:* Paste to batbin
+♤ `/kpaste`*:* Paste to katbin
+♤ `/ppaste`*:* Paste to pastylus
+♤ `/cpaste`*:* Paste to catbin
+♤ `/dpaste`*:* Paste to dogbin
+♤ `/pvpaste`*:* Paste to privatebin
 """
