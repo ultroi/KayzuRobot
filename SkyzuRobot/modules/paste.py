@@ -11,7 +11,7 @@ from telegram import ParseMode, Update, InlineKeyboardButton, InlineKeyboardMark
 from telegram.ext import CallbackContext
 
 from SkyzuRobot import eor
-from SkyzuRobot import pgram as app
+from SkyzuRobot import pbot as app
 from SkyzuRobot.modules.helper_funcs.alternate import typing_action
 from SkyzuRobot.modules.helper_funcs.decorators import Skyzucmd
 from SkyzuRobot.modules.helper_funcs.misc import upload_text
