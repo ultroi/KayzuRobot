@@ -14,10 +14,10 @@ from telegram.utils.helpers import mention_html
 from typing import Optional, List
 from telegram import TelegramError
 
-import SeiraRobot.modules.sql.users_sql as sql
-from SeiraRobot.modules.disable import DisableAbleCommandHandler
-from SeiraRobot.modules.helper_funcs.filters import CustomFilters
-from SeiraRobot import (
+import SkyzuRobot.modules.sql.users_sql as sql
+from SkyzuRobot.modules.disable import DisableAbleCommandHandler
+from SkyzuRobot.modules.helper_funcs.filters import CustomFilters
+from SkyzuRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -27,7 +27,7 @@ from SeiraRobot import (
     WOLVES,
     dispatcher,
 )
-from SeiraRobot.modules.helper_funcs.chat_status import (
+from SkyzuRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     bot_admin,
     can_restrict,
@@ -40,10 +40,10 @@ from SeiraRobot.modules.helper_funcs.chat_status import (
     can_delete,
     dev_plus,
 )
-from SeiraRobot.modules.helper_funcs.extraction import extract_user_and_text
-from SeiraRobot.modules.helper_funcs.string_handling import extract_time
-from SeiraRobot.modules.log_channel import gloggable, loggable
-from SeiraRobot.modules.language import gs
+from SkyzuRobot.modules.helper_funcs.extraction import extract_user_and_text
+from SkyzuRobot.modules.helper_funcs.string_handling import extract_time
+from SkyzuRobot.modules.log_channel import gloggable, loggable
+from SkyzuRobot.modules.language import gs
 
 
 
