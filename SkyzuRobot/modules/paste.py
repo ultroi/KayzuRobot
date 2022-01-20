@@ -13,7 +13,7 @@ from telegram.ext import CallbackContext
 from SkyzuRobot import eor
 from SkyzuRobot import pgram as app
 from SkyzuRobot.modules.helper_funcs.alternate import typing_action
-from SkyzuRobot.modules.helper_funcs.decorators import natsunagicmd
+from SkyzuRobot.modules.helper_funcs.decorators import skyzucmd
 from SkyzuRobot.modules.helper_funcs.misc import upload_text
 from SkyzuRobot.utils.errors import capture_err
 from SkyzuRobot.utils.keyboard import ikb
@@ -72,7 +72,7 @@ async def paste_funcs(_, message: Message):
         await m.edit("Here's your paste", reply_markup=kb)
 
 
-@natsunagicmd(command="hpaste")
+@skyzucmd(command="hpaste")
 def paste(update, context):
     msg = update.effective_message
 
@@ -108,7 +108,7 @@ def paste(update, context):
         return
 
 
-@natsunagicmd(command="npaste")
+@skyzucmd(command="npaste")
 @typing_action
 def nekopaste(update, context):
     msg = update.effective_message
@@ -151,7 +151,7 @@ def nekopaste(update, context):
         return
 
 
-@natsunagicmd(command="spaste")
+@skyzucmd(command="spaste")
 @typing_action
 def spacepaste(update, context):
     message = update.effective_message
@@ -208,7 +208,7 @@ def spacepaste(update, context):
     )
 
 
-@natsunagicmd(command="pvpaste", pass_args=True)
+@skyzucmd(command="pvpaste", pass_args=True)
 def paste(update: Update, context: CallbackContext):
     args = context.args
     message = update.effective_message
