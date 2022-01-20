@@ -1,9 +1,28 @@
+import base64
+import json
+import typing
+import zlib
 from typing import Dict, List
+from urllib.parse import urljoin, urlparse, urlunparse
+from asyncio import sleep
+from uuid import uuid4
 
-from SkyzuRobot import NO_LOAD
-from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
+import base58
+import requests
+from Crypto import Hash, Protocol, Random
+from Crypto.Cipher import AES
+from telegram import (
+    MAX_MESSAGE_LENGTH,
+    Bot,
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InlineQueryResultArticle,
+    InputTextMessageContent,
+    ParseMode,
+)
 from telegram.error import TelegramError
 
+from SkyzuRobot import NO_LOAD
 
 class EqInlineKeyboardButton(InlineKeyboardButton):
     def __eq__(self, other):
