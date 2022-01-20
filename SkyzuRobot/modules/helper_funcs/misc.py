@@ -24,6 +24,7 @@ from telegram.error import TelegramError
 
 from SkyzuRobot import NO_LOAD
 
+
 class EqInlineKeyboardButton(InlineKeyboardButton):
     def __eq__(self, other):
         return self.text == other.text
