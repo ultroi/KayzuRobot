@@ -22,6 +22,7 @@ from telethon.tl.types import *
 
 from SkyzuRobot import *
 
+from Skyzu import register
 from SkyzuRobot import telethn as tbot
 from SkyzuRobot.modules.language import gs
 
@@ -30,7 +31,7 @@ useragent = "Mozilla/5.0 (Linux; Android 9; SM-G960F Build/PPR1.180610.011; wv) 
 opener.addheaders = [("User-agent", useragent)]
 
 
-@register(pattern="^/google "(.*))
+@register(pattern="^/google (.*)")
 async def _(event):
     if event.fwd_from:
         return
