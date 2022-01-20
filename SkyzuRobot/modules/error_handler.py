@@ -15,7 +15,7 @@ from telegram import(
 from telegram.ext import CallbackContext
 
 from SkyzuRobot import DEV_USERS, ERROR_LOGS, dispatcher
-from SkyzuRobot.modules.helper_funcs.decorators import Skyzucmd
+from SkyzuRobot.modules.helper_funcs.decorators import skyzucmd
 
 pretty_errors.mono()
 
@@ -119,7 +119,7 @@ def error_callback(update: Update, context: CallbackContext):
         )
 
 
-@Skyzucmd(command="errors")
+@skyzucmd(command="errors")
 def list_errors(update: Update, context: CallbackContext):
     if update.effective_user.id not in DEV_USERS:
         return
